@@ -120,7 +120,46 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
-        <div style={{ flex: ".33", background: "white" }}></div>
+
+        {/* // LATEST NEWS AND COMMENTS */}
+        <div
+          style={{
+            flex: ".33",
+            // background: "white",
+            display: "flex",
+            flexDirection: "column",
+            gap: "2.4vh",
+          }}
+        >
+          <div
+            className="cardBackground"
+            style={{
+              flex: ".5",
+
+              borderRadius: "1vw",
+              paddingLeft: "2vw",
+              paddingRight: "2vw",
+              paddingTop: "3vh",
+              paddingBottom: "2vh",
+            }}
+          >
+            <h5>Recent messages</h5>
+          </div>
+          <div
+            className="cardBackground"
+            style={{
+              flex: ".5",
+
+              borderRadius: "1vw",
+              paddingLeft: "2vw",
+              paddingRight: "2vw",
+              paddingTop: "3vh",
+              paddingBottom: "2vh",
+            }}
+          >
+            <h5>News</h5>
+          </div>
+        </div>
       </div>
     </div>
   );
