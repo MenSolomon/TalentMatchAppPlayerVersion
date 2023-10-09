@@ -15,7 +15,7 @@ const MotherComponent = () => {
   const menuButtonsArray = [
     { name: "Dashboard", icon: "dashboard", path: "/" },
     // The none values are for the savedFilters which is an accordion and not a button.. skipped over it in the map
-    { name: "Videos", icon: "video_camera_front", path: "none" },
+    { name: "Videos", icon: "video_camera_front", path: "/videos" },
     { name: "Statistics", icon: "bar_chart_4_bars", path: "none" },
     { name: "Favourites", icon: "favorite", path: "none" },
     { name: "Inbox", icon: "move_to_inbox", path: "none" },
