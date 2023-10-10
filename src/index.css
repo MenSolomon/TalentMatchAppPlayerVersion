@@ -30,3 +30,7 @@ div::-webkit-scrollbar-thumb:hover {
 .VideoComponent:hover {
   background: grey;
 }
+
+tbody tr {
+  height: 6vh;
+}
