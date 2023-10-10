@@ -18,7 +18,7 @@ const MotherComponent = () => {
     { name: "Videos", icon: "video_camera_front", path: "/videos" },
     { name: "Statistics", icon: "bar_chart_4_bars", path: "/Statistics" },
     { name: "Favourites", icon: "favorite", path: "/favorites" },
-    { name: "Inbox", icon: "move_to_inbox", path: "none" },
+    { name: "Inbox", icon: "move_to_inbox", path: "/inbox" },
   ];
 
   const menuButtonsArrayTWO2 = [
@@ -37,8 +37,13 @@ const MotherComponent = () => {
 
   const themeProviderObject = useSelector(selectThemeProviderObject);
 
-  const { cardBackground, primaryTextColor, buttonColor, secondaryTextColor } =
-    themeProviderObject;
+  const {
+    background,
+    cardBackground,
+    primaryTextColor,
+    buttonColor,
+    secondaryTextColor,
+  } = themeProviderObject;
 
   const styles = `.playerCard , .field {
 
@@ -145,7 +150,32 @@ const MotherComponent = () => {
   border-radius: .5vw ;
   background: #5585fe
 }
+
+
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root{
+  color:${primaryTextColor};
+  background: ${background}
+}
+
+.css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root{
+  border: 1px solid ${primaryTextColor}
+}
+
+.css-i4bv87-MuiSvgIcon-root{
+  color:${primaryTextColor}
+}
+.css-1ua80n0-MuiInputBase-input-MuiOutlinedInput-input{
+  color:${primaryTextColor}
+}
+
   `;
+  //CLASS FOR TEXT FIELD BORDER .css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root
+
+  // FOR ICON ADORNMENT svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root
+
+  // FOR INPUT COLOR MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall MuiInputBase-inputAdornedStart css-1ua80n0-MuiInputBase-input-MuiOutlinedInput-input
+
+  // FOR TEXT FIELD LABEL COLOR MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root
 
   useEffect(() => {
     const { background } = themeProviderObject;

@@ -4,6 +4,7 @@ import Dashboard from "./screens/Dashboard";
 import Videos from "./screens/Videos";
 import Statistics from "./screens/Statistics";
 import Favorites from "./screens/Favorites";
+import Inbox from "./screens/Inbox";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           <Route path="/videos" element={<Videos />} />
           <Route path="/Statistics" element={<Statistics />} />
           <Route path="/favorites" element={<Favorites />} />
+          <Route path="/inbox" element={<Inbox />} />
         </Route>
       </Routes>
     </div>

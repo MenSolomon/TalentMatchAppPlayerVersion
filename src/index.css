@@ -4,6 +4,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  --scrollbar-width: 4px;
 }
 /* SCROLL BAR SETTINGS */
 
@@ -33,4 +34,12 @@ div::-webkit-scrollbar-thumb:hover {
 
 tbody tr {
   height: 6vh;
+}
+
+.messageCard:hover {
+  border-left: 3px solid #5585fe;
+}
+
+.messageCard {
+  border-left: 3px solid transparent;
 }
