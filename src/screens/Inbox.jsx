@@ -1,4 +1,4 @@
-import { Delete, Reply, Search } from "@mui/icons-material";
+import { Circle, Delete, Reply, Search } from "@mui/icons-material";
 import {
   Avatar,
   IconButton,
@@ -26,7 +26,9 @@ const Inbox = () => {
         {/* // INBOX HEADER */}
         <div style={{ flex: ".2" }}>
           <h5 style={{ fontWeight: "bolder", margin: "0" }}>Inbox</h5>
-          <span style={{ fontSize: ".8em" }}>102Messages - 40 unread</span>
+          <span style={{ fontSize: ".8em" }}>
+            102Messages <Circle sx={{ width: 7 }} /> 40 unread
+          </span>
           {/* // SEARCH INBOX */}
           <TextField
             id="input-with-icon-textfield"

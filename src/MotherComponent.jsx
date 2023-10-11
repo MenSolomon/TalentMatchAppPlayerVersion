@@ -19,11 +19,11 @@ const MotherComponent = () => {
     { name: "Statistics", icon: "bar_chart_4_bars", path: "/Statistics" },
     { name: "Favourites", icon: "favorite", path: "/favorites" },
     { name: "Inbox", icon: "move_to_inbox", path: "/inbox" },
+    { name: "Analytics", icon: "monitoring", path: "/analytics" },
   ];
 
   const menuButtonsArrayTWO2 = [
-    { name: "Analytics", icon: "monitoring", path: "none" },
-    { name: "Add Agency", icon: "follow_the_signs", path: "none" },
+    // { name: "Add Agency", icon: "follow_the_signs", path: "none" },
     { name: "Help", icon: "help", path: "none" },
     { name: "Settings", icon: "settings", path: "none" },
     { name: "Logout", icon: "door_back", path: "none" },
