@@ -3,6 +3,7 @@ import BoxIcon from "../components/Icons/BoxIcon";
 import VideoImage from "../assets/images/videoImage.svg";
 import { useSelector } from "react-redux";
 import { selectThemeProviderObject } from "../statemanager/slices/ThemeProviderSlice";
+import UploadVideoModal from "../components/Modals/UploadVideosModal";
 
 const Dashboard = () => {
   const ThemeProvider = useSelector(selectThemeProviderObject);
@@ -62,7 +63,7 @@ const Dashboard = () => {
                 Want to see metrics on your recent video? Upload and publish a
                 video to get started.{" "}
               </span>
-              <Button>Upload videos</Button>
+              <UploadVideoModal />
             </div>
           </div>
         </div>
