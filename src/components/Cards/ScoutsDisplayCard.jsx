@@ -1,4 +1,5 @@
 import { Avatar, Card, Chip } from "@mui/material";
+import RemindScoutSnackbar from "../Snackbar/RemindScoutSnackbar";
 
 const ScoutsDisplayCard = ({
   backgroundUrl,
@@ -49,7 +50,7 @@ const ScoutsDisplayCard = ({
         </div>
         {/* SIGN UP CHIP */}
         <div style={{ flex: ".3" }}>
-          <Chip sx={{ cursor: "pointer" }} label="Remind" color="primary" />
+          <RemindScoutSnackbar />
         </div>
       </div>
     </Card>

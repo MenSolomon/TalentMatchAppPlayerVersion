@@ -3,6 +3,7 @@ import { IconButton } from "@mui/material";
 import { useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import Avatar from "@mui/material/Avatar";
+import logoImage from "./assets/images/AppLogoBlue.png";
 import avatarImage from "./assets/images/avatar.jpg";
 import ProfileMenu from "./components/Menu/ProfileMenu";
 import LightAndDarkModeSwitch from "./components/Switch/LightAndDarkModeSwitch";
@@ -143,7 +144,9 @@ const MotherComponent = () => {
   color: ${buttonColor}
 }
 
-
+.go4027089540{
+  background-color: ${cardBackground}
+}
 
 .active .NavBarBtns{
   color: white ;
@@ -207,21 +210,11 @@ const MotherComponent = () => {
           style={{
             flex: ".18",
             paddingTop: "1%",
-            display: "flex",
+            display: "grid",
+            placeContent: "center",
           }}
         >
-          <Avatar
-            sx={{
-              // marginLeft: "2vw",
-              width: 62,
-              height: 62,
-              border: "4px solid blue",
-              marginLeft: ".4vw",
-              marginRight: ".4vw",
-            }}
-            src={avatarImage}
-          ></Avatar>
-          <h4 style={{ marginTop: "2vh" }}>Talent Match </h4>
+          <img style={{ width: "110px" }} src={logoImage} />
         </div>
         {/* // Search Area? */}
         <div
