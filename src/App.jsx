@@ -6,6 +6,7 @@ import Statistics from "./screens/Statistics";
 import Favorites from "./screens/Favorites";
 import Inbox from "./screens/Inbox";
 import Analytics from "./screens/Analytics";
+import Help from "./screens/Help";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/favorites" element={<Favorites />} />
           <Route path="/inbox" element={<Inbox />} />
           <Route path="/analytics" element={<Analytics />} />
+          <Route path="/help" element={<Help />} />
         </Route>
       </Routes>
     </div>

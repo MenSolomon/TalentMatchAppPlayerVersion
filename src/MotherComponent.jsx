@@ -24,7 +24,7 @@ const MotherComponent = () => {
 
   const menuButtonsArrayTWO2 = [
     // { name: "Add Agency", icon: "follow_the_signs", path: "none" },
-    { name: "Help", icon: "help", path: "none" },
+    { name: "Help", icon: "help", path: "/help" },
     { name: "Settings", icon: "settings", path: "none" },
     { name: "Logout", icon: "door_back", path: "none" },
   ];
